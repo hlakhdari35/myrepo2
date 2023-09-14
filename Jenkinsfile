@@ -6,11 +6,10 @@ pipeline {
             steps {
                 echo 'Hello World'
             }
-	steps ('Test Script')
+	stage ('Test Script')
 	{
-touch  test3.txt
-ls
-
+	touch  test3.txt
+	ls
 }
         }
     }
