@@ -11,7 +11,7 @@ pipeline {
         stage('run') {
             steps {
                 sh "cd myrepo2/"
-                sh "ls -l"
+                sh "pwd"
             }
         }
         stage('fin') {
