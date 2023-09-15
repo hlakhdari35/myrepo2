@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                sh "git clone https://github.com/hlakhdari35/myrepo2.git"
+		echo "use existinggit home"
             }
         }
         stage('run') {
