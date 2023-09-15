@@ -11,7 +11,8 @@ pipeline {
         }
         stage('run') {
             steps {
-                sh "cd myrepo2/"
+                sh "cd myrepo2/myrepo2/"
+		echo "use existinggit home"
                 sh "pwd"
 		sh "ls -l"
             }
