@@ -12,6 +12,8 @@ pipeline {
             steps {
                 sh "cd myrepo2/"
                 sh "pwd"
+		sh "cd /root/jenkins_home/workspace/github1/myrepo2/"
+		sh "ls -l"
             }
         }
         stage('fin') {
