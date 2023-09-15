@@ -10,7 +10,8 @@ pipeline {
         }
         stage('ru script') {
             steps {
-                sh "cd myrepo2/ && sh script1.sh"
+                sh "cd myrepo2/"
+		sh "script1.sh"
             }
 	stage('ru fin') {
             steps {
