@@ -4,20 +4,19 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-	        sh "rm -rf *"
                 sh "git clone https://github.com/hlakhdari35/myrepo2.git"
             }
         }
-	stage('run') {
+        stage('run') {
             steps {
                 sh "cd myrepo2/"
-		sh "script1.sh"
+                sh "script1.sh"
             }
-	stage('fin') {
+        }
+        stage('fin') {
             steps {
                 echo  "Fin de stages"
             }
-}
 }
 }
 }
