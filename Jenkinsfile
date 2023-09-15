@@ -8,17 +8,16 @@ pipeline {
                 sh "git clone https://github.com/hlakhdari35/myrepo2.git"
             }
         }
-        stage('ru script') {
+	stage('run') {
             steps {
                 sh "cd myrepo2/"
 		sh "script1.sh"
             }
-	stage('ru fin') {
+	stage('fin') {
             steps {
                 echo  "Fin de stages"
             }
-			}
-			
+}
 }
 }
 }
