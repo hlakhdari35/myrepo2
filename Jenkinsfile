@@ -16,7 +16,7 @@ pipeline {
         }
         stage('fin') {
             steps {
-                echo  "Fin de stages"
+                sh "sh script1.sh"
             }
 }
 }
