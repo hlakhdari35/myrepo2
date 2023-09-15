@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                sh "rm -rf *"
                 sh "git clone https://github.com/hlakhdari35/myrepo2.git"
             }
         }
@@ -12,7 +11,6 @@ pipeline {
             steps {
                 sh "cd myrepo2/"
                 sh "pwd"
-		sh "cd /root/jenkins_home/workspace/github1/"
 		sh "ls -l"
             }
         }
