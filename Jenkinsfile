@@ -1,23 +1,12 @@
 pipeline {
-    agent any
-
+    agent {
+        docker { image 'node:18.17.1-alpine3.18' }
+    }
     stages {
-        stage('Clone') {
+        stage('Test') {
             steps {
-		echo "use existinggit home"
+                sh 'node --version'
             }
         }
-        stage('run') {
-            steps {
-                sh "cd myrepo2/"
-                sh "pwd"
-		sh "ls -l"
-            }
-        }
-        stage('fin') {
-            steps {
-                sh "sh script1.sh"
-            }
-}
-}
+    }
 }
